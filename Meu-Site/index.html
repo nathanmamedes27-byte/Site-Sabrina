@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Meu Portal de Interesses</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#dbeafe,#bfdbfe,#eff6ff);
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+
+header{
+    background:linear-gradient(to right,#1e3a8a,#2563eb);
+    color:white;
+    text-align:center;
+    padding:40px;
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+}
+
+header h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+    padding:15px;
+    background:#2563eb;
+}
+
+nav button{
+    border:none;
+    background:white;
+    color:#2563eb;
+    padding:12px 22px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+nav button:hover{
+    transform:translateY(-3px);
+    background:#1e3a8a;
+    color:white;
+}
+
+main{
+    flex:1;
+}
+
+.pagina{
+    display:none;
+    width:90%;
+    max-width:950px;
+    margin:35px auto;
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+    animation:aparecer .5s ease;
+}
+
+.ativa{
+    display:block;
+}
+
+@keyframes aparecer{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+h2{
+    color:#1e3a8a;
+    margin-bottom:20px;
+    border-left:6px solid #2563eb;
+    padding-left:10px;
+}
+
+p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+ul{
+    margin-left:30px;
+}
+
+li{
+    margin-bottom:12px;
+    font-size:18px;
+}
+
+footer{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:16px;
+}
+img{
+    display:block;
+    margin:20px auto;
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Meu Portal de Interesses</h1>
+
+<p>Conheça um pouco mais sobre mim.</p>
+
+</header>
+
+<nav>
+
+<button onclick="mostrar('inicio')">🏠 Início</button>
+
+<button onclick="mostrar('sobre')">👤 Sobre Mim</button>
+
+<button onclick="mostrar('interesses')">⭐ Interesses</button>
+
+<button onclick="mostrar('objetivos')">🎯 Objetivos</button>
+
+<button onclick="mostrar('contato')">📧 Contato</button>
+
+</nav>
+
+<main>
+
+<section id="inicio" class="pagina ativa">
+
+<h2>O que é este portal?</h2>
+
+<p>
+Este portal foi criado para apresentar meus principais interesses,
+minhas habilidades, meus objetivos e um pouco da minha história.
+Nele, você poderá conhecer os temas que mais me inspiram e fazem
+parte da minha vida, como tecnologia, informática,
+inteligência artificial e aprendizagem contínua.
+</p>
+
+<img src="download (1).jpg">
+
+</section>
+
+<section id="sobre" class="pagina">
+
+<h2>Sobre Mim</h2>
+
+<p>
+Meu nome é <strong>Nathan</strong>.
+</p>
+
+<br>
+
+<p>
+Sou estudante do curso Técnico em Informática e tenho 16 anos, gosto muito de jogar jogos de estratégia, jogar futebol e passar o meu tempo junto com minha família e amigos. Moro em Passabém, que é uma cidade pequena com mais ou menos 1600 habitantes, e com a minha família, passamos os finais de semana sempre fazendo um churrasco e assistindo filmes. Sobre o futebol torço para o Cruzeiro, e além disso, fui classificado no projeto Passaporte Mineiro do Conhecimento, que basicamente é um programa que garante bolsas integrais para estudar o "Ensino Médio" em outros países.
+</p>
+
+<img src="0.jpg">
+
+</section>
+
+<section id="interesses" class="pagina">
+
+<h2>Meus Interesses</h2>
+
+<ul>
+
+<li> Futebol - Sempre joguei futebol, mas atualmente pratico somente às quartas-feiras.</li>
+
+<li> Família e amigos - Sou muito ligado a minha família e amigos, passando a maioria do meu tempo com eles, sou muito grato por tudo o que todos fazem por mim.</li>
+
+<li> Estudos - Para mim, tudo gira em torno do estudo, e é muito gratificante ver como meu esforço e minha dedicação estão mudando o meu futuro.</li>
+
+<li> Jogos - Sempre gostei muito de jogos, mais particulamente os de estratégia, que servem como um meio de desestressar e de passar o tempo.</li>
+
+<li> Filmes e séries - Assisto muitos filmes com minha família, principalmente nos finais de semana, e nosso tipo preferido se filme é ficção científica.</li>
+
+<li> Churrasco - Também nos finais de semana costumamos fazer churrasco, sendo um importante momento em família, e as vezes, convidamos amigos para participar desse momento.</li>
+
+</ul>
+
+<img src="download.jpg">
+
+</section>
+
+<section id="objetivos" class="pagina">
+
+<h2>Meus Objetivos</h2>
+
+<p>
+Quero aproveitar ao máximo a minha viagem, conhecendo novas culturas e pessoas. Quando eu voltar, irei focar no ENEM para alcançar uma boa faculdade. Meu principal objetivo é ser feliz.
+</p>
+
+<img src="download (3).jpg">
+
+</section>
+
+<section id="contato" class="pagina">
+
+<h2>Contato</h2>
+
+<p>📧 E-mail: nathanmamedes27@gmail.com</p>
+
+<br>
+
+<p>📷 Instagram: nathan_mamedes27</p>
+
+<br>
+
+</section>
+
+</main>
+
+<footer>
+
+© 2026 - Todos os direitos estão reservados ao criador (Nathan)
+
+</footer>
+
+<script>
+
+function mostrar(id){
+
+    let paginas = document.querySelectorAll(".pagina");
+
+    paginas.forEach(function(p){
+
+        p.classList.remove("ativa");
+
+    });
+
+    document.getElementById(id).classList.add("ativa");
+
+}
+
+</script>
+
+</body>
+</html>
